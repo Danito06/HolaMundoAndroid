@@ -47,7 +47,7 @@
             android:layout_width="171dp"
             android:layout_height="wrap_content"
             android:background="#2196F3"
-            android:text="Conversor °C a °F" />
+            android:text="Conversor de minutos a segundos" />
     </LinearLayout>
 
 

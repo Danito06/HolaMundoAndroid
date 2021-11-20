@@ -9,28 +9,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:background="#00D498"
+        android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextNumberXL"
+            android:id="@+id/editTextNumberXC1"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNumberYL"
+            android:id="@+id/editTextNumberYC1"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/editTextNumbertotalL"
+            android:id="@+id/editTextNumberTotalC1"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number" />
     </LinearLayout>

@@ -13,26 +13,15 @@ import android.widget.TextView;
 public class Conversor extends AppCompatActivity {
 
     private EditText editTextX;
-    private EditText editTextY;
     private EditText editTextTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suma);
-        editTextX = findViewById(R.id.editTextNumberXL);
-        editTextY = findViewById(R.id.editTextNumberYL);
-        editTextTotal = findViewById(R.id.editTextNumbertotalL);
+        setContentView(R.layout.activity_conversor);
+        editTextX = findViewById(R.id.editTextNumberXC1);
+        editTextTotal = findViewById(R.id.editTextNumberTotalC1);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if( !hasFocus)
-                {
-                    realizaOperacion();
-                }
-            }
-        });
-        editTextY.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if( !hasFocus)
@@ -46,16 +35,14 @@ public class Conversor extends AppCompatActivity {
 
     private void realizaOperacion()
     {
-        float total = 0;
+        int total = 0;
         if(editTextX.getText().toString() != null)
         {
             if( isEntero(editTextX.getText().toString()))
             {
-                total = (float) (getEntero( editTextX.getText().toString())*1.8);
-                total = (float) (getEntero( editTextX.getText().toString())+32);
+                total = getEntero( editTextX.getText().toString())*60;
             }
         }
-
 
 
         editTextTotal.setText(String.format("%d", total), TextView.BufferType.SPANNABLE);
